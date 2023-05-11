@@ -1,0 +1,91 @@
+.pagetitle {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.035em;
+  color: #000000;
+  text-align: center;
+}
+.pagesubtitle {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.035em;
+  color: #000000;
+  text-align: center;
+}
+
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerRows {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding-block: 1.5rem;
+  gap: 1rem;
+}
+
+.containerRows:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.containerRows + .containerRows {
+  border-top: 1px solid #e0e0e0;
+}
+
+.containerRows span:first-child {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+
+.containerRows .label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.035em;
+  color: #333333;
+}
+.containerRows .value {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.035em;
+  color: #333333;
+  justify-self: flex-start;
+}
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.035em;
+  color: #000000;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.035em;
+  color: #828282;
+}
+
+.editBtn {
+  border: 1px solid #828282;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.035em;
+  color: #828282;
+  padding: 0.3rem 1.4rem;
+}
