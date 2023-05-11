@@ -20,7 +20,7 @@ export default function EditLayout({ children }) {
   return (
     <html lang="en">
       <body className={notoSans.className}>
-        <Header/>
+        <Header />
         {/* <button>
           <span
             className="material-symbols-rounded"

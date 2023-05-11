@@ -21,7 +21,7 @@ export default function Header() {
           onClick={() => setActive(!active)}
         >
           <Image src="/icon/avatar.jpg" alt="profile" width={30} height={30} />
-                <span className={style.username}>Xanthe Neal</span>
+          <span className={style.username}>Xanthe Neal</span>
           <span
             className="material-symbols-rounded"
             style={{ transform: active ? "rotate(180deg)" : "rotate(0deg)" }}
@@ -29,26 +29,28 @@ export default function Header() {
             arrow_drop_down
           </span>
         </button>
-        {active && <ul className={style.dropdown}>
-          <li>
-            <Link href="#">
-              <span className="material-symbols-rounded">account_circle</span>
-              <span>My Profile</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <span className="material-symbols-rounded">group</span>
-              <span>Group Chat</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <span className="material-symbols-rounded">logout</span>
-              <span>Logout</span>
-            </Link>
-          </li>
-        </ul>}
+        {active && (
+          <ul className={style.dropdown}>
+            <li>
+              <Link href="#">
+                <span className="material-symbols-rounded">account_circle</span>
+                <span>My Profile</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <span className="material-symbols-rounded">group</span>
+                <span>Group Chat</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <span className="material-symbols-rounded">logout</span>
+                <span>Logout</span>
+              </Link>
+            </li>
+          </ul>
+        )}
       </div>
     </header>
   );
