@@ -32,7 +32,7 @@
   color: #4f4f4f;
 }
 
-.field label[for="photo"] {
+.field label[for="image"] {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@
   align-items: center;
 }
 
-.field label[for="photo"] > span {
+.field label[for="image"] > span {
   font-weight: 500;
   font-size: 13px;
   line-height: 18px;
@@ -103,4 +103,9 @@
   width: max-content;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
+}
+
+.errorMessage {
+  color: red;
+  font-size: x-small;
 }
